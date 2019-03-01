@@ -1,4 +1,5 @@
-/* font-family: 'Kanit', sans-serif; */
+/* font-family: 'Coda', cursive;
+font-family: 'Alegreya Sans SC', sans-serif; */
 
 html {
   font-size: 10px;
@@ -58,48 +59,7 @@ nav::after {
   display: block;
   width: 100%;
   height: 0.5rem;
-
   background-color: #334795;
-
-  /* background: rgba(255, 255, 255, 1);
-    background: -moz-linear-gradient(left,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(2, 41, 197, 1) 25%,
-        rgba(2, 41, 197, 1) 51%,
-        rgba(2, 41, 197, 1) 75%,
-        rgba(255, 255, 255, 1) 100%);
-    background: -webkit-gradient(left top,
-        right top,
-        color-stop(0%, rgba(255, 255, 255, 1)),
-        color-stop(25%, rgba(2, 41, 197, 1)),
-        color-stop(51%, rgba(2, 41, 197, 1)),
-        color-stop(75%, rgba(2, 41, 197, 1)),
-        color-stop(100%, rgba(255, 255, 255, 1)));
-    background: -webkit-linear-gradient(left,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(2, 41, 197, 1) 25%,
-        rgba(2, 41, 197, 1) 51%,
-        rgba(2, 41, 197, 1) 75%,
-        rgba(255, 255, 255, 1) 100%);
-    background: -o-linear-gradient(left,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(2, 41, 197, 1) 25%,
-        rgba(2, 41, 197, 1) 51%,
-        rgba(2, 41, 197, 1) 75%,
-        rgba(255, 255, 255, 1) 100%);
-    background: -ms-linear-gradient(left,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(2, 41, 197, 1) 25%,
-        rgba(2, 41, 197, 1) 51%,
-        rgba(2, 41, 197, 1) 75%,
-        rgba(255, 255, 255, 1) 100%);
-    background: linear-gradient(to right,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(2, 41, 197, 1) 25%,
-        rgba(2, 41, 197, 1) 51%,
-        rgba(2, 41, 197, 1) 75%,
-        rgba(255, 255, 255, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1); */
 }
 
 /* HEADER */
@@ -113,7 +73,7 @@ header {
   left: 0;
 
   background-image: url("../img/6.jpg");
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -124,7 +84,7 @@ header h2 {
   padding: 3rem 0 0 0;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Kanit", sans-serif;
+  font-family: "Coda", cursive;
   letter-spacing: 0.3rem;
   font-size: 2rem;
   color: #2b2b2b;
@@ -137,9 +97,52 @@ section.about {
   position: relative;
   top: 13vh;
   left: 0;
-  background-color: #eee;
+  background-color: #eff3ff;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.about .background {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../img/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about h3 {
+  margin: 0;
+  padding: 3rem 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #4b4b4b;
+}
+
+.about h3::after {
+  content: "";
+  display: block;
+  margin: 0.8rem 0 0 0;
+  width: 20rem;
+  height: 0.5rem;
+
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  background-image: linear-gradient(
+    to right,
+    #334795,
+    #616fb0,
+    #8e9acb,
+    #bdc6e5,
+    #eff3ff
+  );
 }
 
 .about p {
   margin: 0;
+  padding: 3rem 0 5rem 0;
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  color: #000;
 }
