@@ -65,12 +65,12 @@ nav::after {
 /* HEADER */
 
 header {
-  /* margin: 5vh; */
   width: 100%;
   height: 87vh;
-  position: relative;
+  margin: 13vh 0 0 0;
+  /* position: absolute;
   top: 13vh;
-  left: 0;
+  left: 0; */
 
   background-image: url("../img/6.jpg");
   /* background-attachment: fixed; */
@@ -90,13 +90,82 @@ header h2 {
   color: #2b2b2b;
 }
 
+/* H3.TITLE */
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+
+  font-family: "Alegreya Sans SC", sans-serif;
+
+  font-size: 4rem;
+  font-weight: 900;
+  color: #4b4b4b;
+}
+
+/*  */
+
+/* OFFER */
+
+section.offer {
+  width: 100%;
+}
+
+.offer h3 {
+  width: 100%;
+  margin: 0;
+  padding: 3rem 0 0 0;
+  text-align: center;
+}
+
+.offer h3::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 0.5rem;
+  background-color: #957c33;
+  margin: 0 auto;
+}
+
+.service {
+  margin: 4rem 0 0;
+  background-color: #eff3ff;
+
+  /* ask client about text-align*/
+  /* text-align: center; */
+}
+
+.service img {
+  width: 100%;
+  height: 20rem;
+}
+
+.service p {
+  margin: 0;
+  padding: 0 1.5rem 2.5rem 1.5rem;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+/* SERVICE.TITLE */
+
+.service-title {
+  margin: 0;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  font-family: "Coda", cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  color: #48380a;
+}
+
+/*  */
+
 /* ABOUT */
 
 section.about {
   width: 100%;
-  position: relative;
-  top: 13vh;
-  left: 0;
+  margin: 5rem 0 0 0;
   background-color: #eff3ff;
   font-family: "Alegreya Sans SC", sans-serif;
 }
@@ -113,11 +182,6 @@ section.about {
 .about h3 {
   margin: 0;
   padding: 3rem 0 0 0;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  font-size: 4rem;
-  font-weight: 900;
-  color: #4b4b4b;
 }
 
 .about h3::after {
@@ -127,16 +191,19 @@ section.about {
   width: 20rem;
   height: 0.5rem;
 
-  border-top-left-radius: 0.4rem;
-  border-bottom-left-radius: 0.4rem;
-  background-image: linear-gradient(
+  /* border-top-left-radius: 0.4rem; */
+  /* border-bottom-left-radius: 0.4rem; */
+
+  background-color: #957c33;
+
+  /* background-image: linear-gradient(
     to right,
     #334795,
     #616fb0,
     #8e9acb,
     #bdc6e5,
     #eff3ff
-  );
+  ); */
 }
 
 .about p {
