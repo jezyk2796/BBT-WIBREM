@@ -27,6 +27,51 @@ body {
   padding: 0 7%;
 }
 
+/* H3.TITLE */
+
+.title {
+  margin: 0;
+  padding: 3rem 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+
+  font-family: "Alegreya Sans SC", sans-serif;
+
+  font-size: 4rem;
+  font-weight: 900;
+  color: #4b4b4b;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  height: 0.5rem;
+  margin: .8rem 0 0 0;
+  background-color: #957c33;
+
+  /* border-top-left-radius: 0.4rem; */
+  /* border-bottom-left-radius: 0.4rem; */
+  /* background-image: linear-gradient(
+    to right,
+    #334795,
+    #616fb0,
+    #8e9acb,
+    #bdc6e5,
+    #eff3ff
+    ); */
+}
+
+/* SERVICE.TITLE */
+
+.service-title {
+  margin: 0;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  font-family: "Coda", cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  color: #48380a;
+}
+
 /* NAV */
 
 nav {
@@ -52,7 +97,12 @@ nav img {
 }
 
 nav .burger {
+  width: 3rem;
+  height: 3rem;
   font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #1f1f1f;
 }
 
@@ -67,7 +117,7 @@ nav::after {
 /* MENU */
 
 .menu {
-  margin: .5rem 0 0 0;
+  margin: 0.5rem 0 0 0;
   padding: 0;
   width: 50vw;
   height: 87vh;
@@ -81,7 +131,7 @@ nav::after {
   background-color: #334795;
 
   transform: translateX(100%);
-  transition: transform .5s ease-in;
+  transition: transform 0.5s ease-in;
 }
 
 .menu li {
@@ -95,7 +145,7 @@ nav::after {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 300;
   font-size: 1.6rem;
   color: #fff;
@@ -116,18 +166,6 @@ nav::after {
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes hideLinks {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateX(50px);
   }
 }
 
@@ -159,20 +197,6 @@ header h2 {
   color: #2b2b2b;
 }
 
-/* H3.TITLE */
-
-.title {
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-
-  font-family: "Alegreya Sans SC", sans-serif;
-
-  font-size: 4rem;
-  font-weight: 900;
-  color: #4b4b4b;
-}
-
-/*  */
 
 /* OFFER */
 
@@ -181,19 +205,12 @@ section.offer {
 }
 
 .offer h3 {
-  width: 100%;
-  margin: 0;
-  padding: 3rem 0 0 0;
   text-align: center;
 }
 
 .offer h3::after {
-  content: "";
-  display: block;
   width: 20rem;
-  height: 0.5rem;
-  background-color: #957c33;
-  margin: 0 auto;
+  margin: .8rem auto;
 }
 
 .service {
@@ -218,18 +235,6 @@ section.offer {
   letter-spacing: 1px;
 }
 
-/* SERVICE.TITLE */
-
-.service-title {
-  margin: 0;
-  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
-  font-family: "Coda", cursive;
-  font-size: 2.2rem;
-  letter-spacing: 0.2rem;
-  color: #48380a;
-}
-
-/*  */
 
 /* ABOUT */
 
@@ -249,31 +254,8 @@ section.about {
   background-size: cover;
 }
 
-.about h3 {
-  margin: 0;
-  padding: 3rem 0 0 0;
-}
-
 .about h3::after {
-  content: "";
-  display: block;
-  margin: 0.8rem 0 0 0;
   width: 20rem;
-  height: 0.5rem;
-
-  /* border-top-left-radius: 0.4rem; */
-  /* border-bottom-left-radius: 0.4rem; */
-
-  background-color: #957c33;
-
-  /* background-image: linear-gradient(
-    to right,
-    #334795,
-    #616fb0,
-    #8e9acb,
-    #bdc6e5,
-    #eff3ff
-  ); */
 }
 
 .about p {
@@ -282,4 +264,44 @@ section.about {
   letter-spacing: 0.1rem;
   font-size: 1.6rem;
   color: #000;
+}
+
+/* CONTACT */
+
+.contact {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.contact .title::after {
+  width: 21.5rem;
+}
+
+.contact .contact-title {
+  margin: 0;
+  padding: 4rem 0 3rem 0;
+  font-size: 2.4rem;
+  color: #48380a;
+}
+
+.contact p {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* FOOTER */
+
+footer {
+  margin: 5rem 0 0 0;
+  background-color: #334795;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+  padding: 1.5rem 0;
+  text-align: center;
+  letter-spacing: .1rem;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
