@@ -36,7 +36,7 @@ const hideMenu = () => {
   const close = document.querySelector(".fa-times");
   const menuLinks = document.querySelectorAll(".menu li");
 
-  document.querySelector('.menu').classList.remove('menu-active');
+  document.querySelector(".menu").classList.remove("menu-active");
 
   bars.classList.toggle("toggle");
   close.classList.toggle("toggle");
@@ -50,22 +50,27 @@ const hideMenu = () => {
       link.style.animation = `showLinks 0.5s ease forwards ${i / 7 + 0.5}s`;
     }
   });
-}
+};
 
 // navigate to sections
 
-const navigate = (e) => {
+const navigate = e => {
   e.preventDefault();
-  const targetId = e.currentTarget.getAttribute('href');
-  const navHeight = document.querySelector('nav').offsetHeight;
+  const targetId = e.currentTarget.getAttribute("href");
+  const navHeight = document.querySelector("nav").offsetHeight;
 
   window.scrollTo({
-    top: targetId === "#" ? 0 : document.querySelector(targetId).offsetTop - navHeight,
-    behavior: "smooth",
+    top:
+      targetId === "#"
+        ? 0
+        : document.querySelector(targetId).offsetTop - navHeight,
+    behavior: "smooth"
   });
 
   hideMenu();
-}
+};
 
-const allA = document.querySelectorAll('.menu a');
-allA.forEach(link => link.addEventListener('click', navigate));
+const allA = document.querySelectorAll(".menu a");
+allA.forEach(link => link.addEventListener("click", navigate));
+
+document.querySelector(".logo a").addEventListener("click", navigate);
