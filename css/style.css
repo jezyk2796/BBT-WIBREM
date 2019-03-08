@@ -129,6 +129,32 @@ nav::after {
   }
 }
 
+@media (min-width: 540px) {
+  nav img {
+    width: 22rem;
+    height: 4rem;
+  }
+
+  nav .burger {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 720px) {
+  nav img {
+    width: 27rem;
+    height: 5rem;
+  }
+
+  nav .burger {
+    width: 5rem;
+    height: 5rem;
+    font-size: 4.5rem;
+  }
+}
+
 /* MENU */
 
 .menu {
@@ -217,10 +243,26 @@ header h2 {
 }
 
 @media (orientation: landscape) {
+  header {
+    margin: 12vh 0 0 0;
+  }
+}
+
+@media (min-width: 480px) {
   header .welcome {
     padding: 3rem 5rem 0 5rem;
   }
+
+  header h2 {
+    font-size: 2.6rem;
+  }
 }
+
+/* @media (min-width: 480px) {
+  header .welcome {
+    padding: 3rem 10rem 0 10rem;
+  }
+} */
 
 /* OFFER */
 
@@ -238,7 +280,7 @@ section.offer {
 }
 
 .service {
-  margin: 4rem 0 0;
+  margin: 4rem 0 0 0;
   background-color: #eff3ff;
 
   /* ask client about text-align*/
@@ -259,7 +301,8 @@ section.offer {
   letter-spacing: 1px;
 }
 
-@media (orientation: landscape) {
+
+@media (min-width: 361px) {
   section.offer {
     display: flex;
   }
@@ -269,6 +312,11 @@ section.offer {
   }
 }
 
+@media (min-height: 600px) {
+  .service {
+    margin: 8rem 0 0 0;
+  }
+}
 
 /* ABOUT */
 
@@ -303,6 +351,12 @@ section.about {
 @media (orientation: landscape) {
   .about .background {
     height: 55vh;
+  }
+}
+
+@media (min-height: 600px) {
+  section.about {
+    margin: 8rem 0 0 0;
   }
 }
 
