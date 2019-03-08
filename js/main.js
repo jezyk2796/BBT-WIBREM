@@ -58,6 +58,7 @@ const navigate = e => {
   e.preventDefault();
   const targetId = e.currentTarget.getAttribute("href");
   const navHeight = document.querySelector("nav").offsetHeight;
+  const logoLink = e.currentTarget.parentElement;
 
   window.scrollTo({
     top:
@@ -67,10 +68,16 @@ const navigate = e => {
     behavior: "smooth"
   });
 
-  hideMenu();
+  if (logoLink.classList.value === "logo") {
+    return;
+  } else {
+    hideMenu();
+  }
 };
 
 const allA = document.querySelectorAll(".menu a");
 allA.forEach(link => link.addEventListener("click", navigate));
 
 document.querySelector(".logo a").addEventListener("click", navigate);
+
+// DO IT AGAIN AND BETTER
