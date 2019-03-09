@@ -61,14 +61,12 @@ const navigate = e => {
   const logoLink = e.currentTarget.parentElement;
 
   window.scrollTo({
-    top:
-      targetId === "#"
-        ? 0
-        : document.querySelector(targetId).offsetTop - navHeight,
+    top: targetId === "#" ?
+      0 : document.querySelector(targetId).offsetTop - navHeight,
     behavior: "smooth"
   });
 
-  if (logoLink.classList.value === "logo") {
+  if (logoLink.classList.value === "logo" || window.innerWidth >= 1024) {
     return;
   } else {
     hideMenu();
