@@ -529,3 +529,21 @@ footer p {
   font-size: 1.6rem;
   font-weight: 300;
 }
+
+@media (min-width: 480px) {
+  footer p {
+    padding: 2rem 0;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 720px) {
+  footer {
+    margin: 7rem 0 0 0;
+  }
+
+  footer p {
+    padding: 3rem 0;
+    font-size: 2.8rem;
+  }
+}
