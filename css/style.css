@@ -23,7 +23,7 @@ body {
 
 .wrapper {
   max-width: 1440px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 7%;
 }
 
@@ -46,7 +46,7 @@ body {
   content: "";
   display: block;
   height: 0.5rem;
-  margin: .8rem 0 0 0;
+  margin: 0.8rem 0 0 0;
   background-color: #957c33;
 
   /* border-top-left-radius: 0.4rem; */
@@ -67,7 +67,7 @@ body {
   }
 
   .title::after {
-    height: .6rem;
+    height: 0.6rem;
   }
 }
 
@@ -77,7 +77,7 @@ body {
   }
 
   .title::after {
-    height: .7rem;
+    height: 0.7rem;
   }
 }
 
@@ -90,6 +90,20 @@ body {
   font-size: 2.2rem;
   letter-spacing: 0.2rem;
   color: #48380a;
+}
+
+@media (min-width: 480px) {
+  .service-title {
+    font-size: 2.8rem;
+    padding: 3rem 2rem 2rem 2rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .service-title {
+    font-size: 3.8rem;
+    padding: 4rem 3rem 3rem 3rem;
+  }
 }
 
 /* NAV */
@@ -257,7 +271,7 @@ header h2 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Coda", cursive;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   font-size: 2rem;
   color: #2b2b2b;
 }
@@ -300,7 +314,7 @@ section.offer {
 
 .offer h3::after {
   width: 20rem;
-  margin: .8rem auto;
+  margin: 0.8rem auto;
 }
 
 .service {
@@ -325,7 +339,6 @@ section.offer {
   letter-spacing: 1px;
 }
 
-
 @media (min-width: 361px) {
   .offer .wrapper {
     display: flex;
@@ -348,11 +361,37 @@ section.offer {
   .offer .title::after {
     width: 25rem;
   }
+
+  .service {
+    width: 34rem;
+  }
+
+  .service img {
+    height: 23rem;
+  }
+
+  .service p {
+    font-size: 1.8rem;
+    padding: 0 2rem 3rem 2rem;
+  }
 }
 
 @media (min-width: 720px) {
   .offer .title::after {
     width: 30rem;
+  }
+
+  .service {
+    width: 44rem;
+  }
+
+  .service img {
+    height: 30rem;
+  }
+
+  .service p {
+    font-size: 2.4rem;
+    padding: 0 3rem 4rem 3rem;
   }
 }
 
@@ -413,7 +452,7 @@ section.about {
 /* CONTACT */
 
 .contact {
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
 }
 
 .contact .title::after {
@@ -456,8 +495,8 @@ footer p {
   margin: 0;
   padding: 1.5rem 0;
   text-align: center;
-  letter-spacing: .1rem;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 0.1rem;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
 }
