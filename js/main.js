@@ -52,6 +52,10 @@ const hideMenu = () => {
   });
 };
 
+// global variables
+const windowWidth = window.innerWidth;
+const windowHeight = window.innerHeight;
+
 // navigate to sections
 
 const navigate = e => {
@@ -61,12 +65,17 @@ const navigate = e => {
   const logoLink = e.currentTarget.parentElement;
 
   window.scrollTo({
-    top: targetId === "#" ?
-      0 : document.querySelector(targetId).offsetTop - navHeight,
+    top:
+      targetId === "#"
+        ? 0
+        : document.querySelector(targetId).offsetTop - navHeight,
     behavior: "smooth"
   });
 
-  if (logoLink.classList.value === "logo" || window.innerWidth >= 1024) {
+  if (
+    logoLink.classList.value === "logo" ||
+    (windowWidth >= 1024 && windowHeight < windowWidth)
+  ) {
     return;
   } else {
     hideMenu();
@@ -75,7 +84,18 @@ const navigate = e => {
 
 const allA = document.querySelectorAll(".menu a");
 allA.forEach(link => link.addEventListener("click", navigate));
-
 document.querySelector(".logo a").addEventListener("click", navigate);
 
-// DO IT AGAIN AND BETTER
+const setBgcHeight = () => {
+  const bgc = document.querySelector(".background");
+  const fluentDiv = document.querySelector(".about .wrapper");
+
+  if (windowWidth >= 1024 && windowHeight < windowWidth) {
+    bgc.style.height = `${fluentDiv.clientHeight}px`;
+  }
+};
+
+setBgcHeight();
+window.addEventListener("resize", setBgcHeight);
+
+// TO DO AGAIN AND BETTER
