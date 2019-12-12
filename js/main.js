@@ -96,6 +96,6 @@ const setBgcHeight = () => {
 };
 
 setBgcHeight();
-window.addEventListener("resize", setBgcHeight);
+window.addEventListener("load", setBgcHeight);
 
 // TO DO AGAIN AND BETTER
