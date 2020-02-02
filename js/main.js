@@ -64,6 +64,10 @@ const navigate = e => {
   const navHeight = document.querySelector("nav").offsetHeight;
   const logoLink = e.currentTarget.parentElement;
 
+  if (e.target.innerHTML === 'galeria') {
+    window.location.href = './subpages/gallery.html';
+  }
+
   window.scrollTo({
     top:
       targetId === "#"
