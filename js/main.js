@@ -102,4 +102,3 @@ const setBgcHeight = () => {
 setBgcHeight();
 window.addEventListener("load", setBgcHeight);
 
-// TO DO AGAIN AND BETTER
