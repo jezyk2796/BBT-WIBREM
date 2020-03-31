@@ -1,0 +1,13 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule ^remonty-pomp-olejowych$ index.html
+RewriteRule ^galeria$ gallery.html
+RewriteRule ^uprawnienia$ permissions.html

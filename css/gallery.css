@@ -70,6 +70,12 @@ section.gallery {
     transition: 0.5s;
 }
 
+/* LICENSES */
+.license-link > img {
+    height: 40vw;
+}
+/**/
+
 .photo-link > img:hover {
     transform: scale(1.1);
 }
@@ -98,6 +104,12 @@ section.gallery {
     .photo-link > img {
         height: 14vw;
     }
+
+    /* LICENSES */
+    .license-link > img {
+        height: 22vw;
+    }
+    /**/
 }
 
 @media (min-width: 768px) {

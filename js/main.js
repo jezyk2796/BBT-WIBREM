@@ -66,6 +66,8 @@ const navigate = e => {
 
   if (e.target.innerHTML === 'galeria') {
     window.location.href = './subpages/gallery.html';
+  } else if (e.target.innerHTML === 'uprawnienia') {
+    window.location.href = './subpages/licenses.html';
   }
 
   window.scrollTo({
