@@ -143,7 +143,7 @@ nav::after {
   }
 
   nav img {
-    width: 15rem;
+    width: 11rem;
     height: 2rem;
   }
 }
@@ -161,6 +161,13 @@ nav::after {
   }
 }
 
+@media (min-width: 540px) and (orientation: landscape) {
+  nav img {
+    width: 15rem;
+    height: 3rem;
+  }
+}
+
 @media (min-width: 720px) and (orientation: portrait) {
   nav img {
     width: 27rem;
@@ -171,6 +178,13 @@ nav::after {
     width: 5rem;
     height: 5rem;
     font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 720px) and (orientation: landscape) {
+  nav img {
+    width: 20rem;
+    height: 4rem;
   }
 }
 
@@ -185,7 +199,7 @@ nav::after {
 
   nav img {
     width: 30rem;
-    height: 3.5rem;
+    height: 4.5rem;
   }
 
   nav .burger {
